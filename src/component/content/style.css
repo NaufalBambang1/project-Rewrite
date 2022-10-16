@@ -1,0 +1,49 @@
+
+.card-custom {
+  padding: 2rem;
+}
+
+.font-size-feed {
+  font-size: 25px;
+  margin-top: -0.6rem;
+}
+
+.font-size-recomend {
+  font-size: 30px;
+  margin-top: 1rem;
+}
+
+.font-size-explore {
+  font-size: 25px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.image-custom {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 250px;
+  max-height: 250px;
+}
+.image--custom {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.recen-custom {
+  margin-left: 3rem;
+  max-width: 250px;
+}
+.image-feed-custom {
+  max-width: 100px;
+}
+
+.font-size-wish-lib {
+  font-size: 20px;
+  margin-left: 1rem;
+  margin-bottom: -0.001rem;
+}
+
+.summary-custom {
+    margin-top: 2rem;
+  }

@@ -1,0 +1,42 @@
+.navbar {
+  position: fixed;
+  border-bottom: 0.2rem solid #dfe3e591;
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.search-icon {
+  transform: translate(1.5rem, 0.7rem);
+}
+
+input[type="text"] {
+  padding-left: 2rem;
+}
+
+.sidebar-custom {
+  position: fixed;
+  margin: 0;
+  padding-left: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-right: 0.2rem solid #dfe3e591;
+}
+
+.sidebar-icon {
+  background: #dfe3e591;
+  padding: 0.8rem;
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  border-radius: 0.5rem;
+  /* color: #3f4d4e; */
+  transform: translateX(-2rem);
+}
+
+.sidebar-link {
+  max-width: 23px;
+  max-height: 23px;
+  transform: translateY(-0.1rem);
+}

@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MainLayouts from "./component/layouts/main.layouts";
 
-function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import HomeContent from "./component/content/home.content";
+import Wishtlist from "./component/content/wish.content";
+import CartContent from "./component/content/cart.conten";
+import Library from "./component/content/library.content";
+import LoginPage from "./component/login/login.layout";
+import SignupPage from "./component/signup/signup.layout";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/Signup" element={<SignupPage />}></Route>
+          <Route path="/Login" element={<LoginPage />}></Route>
+        </Routes>
+        <Routes>
+          <Route element={<MainLayouts />}>
+            <Route path="/" element={<HomeContent />}></Route>
+            <Route path="/wishtlist" element={<Wishtlist />}></Route>
+            <Route path="/cart" element={<CartContent />}></Route>
+            <Route path="/library" element={<Library />}></Route>
+          </Route>
+        </Routes>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;
